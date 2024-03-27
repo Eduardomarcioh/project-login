@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media-query.css">
 </head>
@@ -15,8 +16,21 @@
             <div id="form">
                 <h1>Login</h1>
                 <p>Welcome! Log in to access your account.</p>
-                <form action="login.php" method="post">
-
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <i class="material-icons">person</i>
+                        <input type="email" id="ilogin" placeholder="E-mail" autocomplete="email" required maxlength="30">
+                        <label for="ilogin">Login</label>
+                    </div>
+                    <div class="campo">
+                        <i class="material-icons">vpn_key</i>
+                        <input type="password" id="isenha" placeholder="Password" autocomplete="current-password" required maxlength="20" minlength="8">
+                        <label for="isenha">Password</label>
+                    </div>
+                    <input type="submit" value="Enter">
+                    <a href="esqueci.html">
+                        Forgot the password<i class="material-icons">mail</i>
+                    </a>
                 </form>
             </div>
 
